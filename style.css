@@ -13,23 +13,29 @@
     
 }
 nav{
-    display: flex;
+    position: relative;
     padding: 2% 1%;
     justify-content: space-between;
     align-items: center;
 }
 nav img{
+    position: relative;
     width: 300px;
     box-shadow: 4px 2px 10px black;
+ 
+  background-color: red;
 
 
 }
 
 .nav-links{
+position: relative;
 flex:1;
+position: relative;
 text-align: right;
 opacity: 0%;
 }
+
 .nav-links, ul, li{
     list-style: none;
     display: inline-block;
@@ -40,16 +46,103 @@ opacity: 0%;
     color:white;
     text-decoration:overline 2px rgb(202, 202, 202);
     font-size: 30px;
+    text-shadow: black 10px 2px 10px;
+    position: relative;
 }
 
 
-.lista:hover{
+.lista1:hover{
 background-color: rgb(78, 11, 11);
+text-emphasis-color: rgb(189, 31, 31);
+transition: 1s;
+position:relative;
+
+}
+
+
+
+
+
+
+.textbox{
+    content: '';
+    width: 70%;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.651);
+    text-shadow: black 5px 1px 4px;
+    font-size: larger;
+    position: relative;
+    left: 50%;
+    top: 230px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 1s;
+    }
+
+
+
+    .descripcion1{
+animation-duration: 4s;
+animation-name: slidein;
+}
+
+
+@keyframes slidein {
+    from{
+    opacity: 0%;
+    transform:translateY(-10px)
+    
+}
+    50%{
+        color:red
+        
+    }
+    60%{
+        color:white;
+
+    }
+    to{
+    opacity:100%
+
+    }
+}
+
+.contactanos{
+color:rgb(204, 48, 48);
+font-size: 40px;
+}
+
+.numero,.numero1{
+    color: aliceblue;
+    position: relative;
+    font-size: 60px;
+    top: 50%;
+    text-align: center;
+}
+.numero1{
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.numero:hover{
+color: rgba(69, 184, 69, 0.822);
 transition: 1s;
 }
+.bajen{
+color: white;
+position: relative;
+transform: translateY(430px);
+top: -300px;
+text-align: center;
+}
 
-a:hover{
-    color: rgb(189, 31, 31);
-    transition: 1s;
+.tabla{
+position: relative;
+background-color: red;
+width: 100%;
+size: cover;
+table-layout: fixed;
+border:23px;
+border-color: black;
+display:block
 }
 
